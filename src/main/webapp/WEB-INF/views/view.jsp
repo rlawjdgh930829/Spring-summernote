@@ -25,12 +25,11 @@
 				enctype : 'multipart/form-data',
 				processData : false,
 				success : function(img_name) {
-					setTimeout(function() {
 						$(el).summernote('editor.insertImage', img_name);
-					}, 4000);
-				}
-			});
-		}
+					}
+				});
+			}
+		
 		$(function() {
 			$('#summernote').summernote({
 				 	placeholder: '최대 500자 작성 가능합니다.',
